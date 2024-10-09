@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        audio {
+            width: 280px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Examples</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Speakers</th>
+                <th>I0-M</th>
+                <th>I1-F</th>
+                <th>KB-M</th>
+                <th>KI-M</th>
+                <th>IR-F</th>
+                <th>JN-F</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Originals</th>
+                <td>
+                    <audio controls>
+                        <source src="files/originals/I0-M/0.flac" type="audio/wav">
+                    </audio>
+                </td>
+                <td>
+                    <audio controls>
+                        <source src="files/originals/I1-F/0.flac" type="audio/wav">
+                    </audio>
+                </td>
+                <td>
+                    <audio controls>
+                        <source src="files/originals/KB-M/0.flac" type="audio/wav">
+                    </audio>
+                </td>
+                <td>
+                    <audio controls>
+                        <source src="files/originals/KI-M/0.flac" type="audio/wav">
+                    </audio>
+                </td>
+                <td>
+                    <audio controls>
+                        <source src="files/originals/IR-F/0.flac" type="audio/wav">
+                    </audio>
+                </td>
+                <td>
+                    <audio controls>
+                        <source src="files/originals/JN-F/0.flac" type="audio/wav">
+                    </audio>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h1> Resynthesis </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Speakers</th>
+                <th>I0-M</th>
+                <th>I1-F</th>
+                <th>KB-M</th>
+                <th>KI-M</th>
+                <th>IR-F</th>
+                <th>JN-F</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Conditionning on layer 1 only</th>
+                <td>
+                    <audio controls>
+                        <source src="files/BREF_f0mean_unit_out128_no_norm_stop_c1/syn_I0-M/0.wav" type="audio/wav">
+                    </audio>
+                </td>
+                <td>
+                    <audio controls>
+                        <source src="files/BREF_f0mean_unit_out128_no_norm_stop_c1/syn_I1-F/0.wav" type="audio/wav">
+                    </audio>
+                </td>
+                <td>
+                    <audio controls>
+                        <source src="files/BREF_f0mean_unit_out128_no_norm_stop_c1/syn_KB-M/0.wav" type="audio/wav">
+                    </audio>
+                </td>
+                <td>
+                    <audio controls>
+                        <source src="files/BREF_f0mean_unit_out128_no_norm_stop_c1/syn_KI-M/0.wav" type="audio/wav">
+                    </audio>
+                </td>
+                <td>
+                    <audio controls>
+                        <source src="files/BREF_f0mean_unit_out128_no_norm_stop_c1/syn_IR-F/0.wav" type="audio/wav">
+                    </audio>
+                </td>
+                <td>
+                    <audio controls>
+                        <source src="files/BREF_f0mean_unit_out128_no_norm_stop_c1/syn_JN-F/0.wav" type="audio/wav">
+            <tr>
+            </tr>
+        <tr>
+        </tr>
+            <th>Baseline without normalization</th>
+            <td>
+                <audio controls>
+                    <source src="files/BREF_f0mean_unit_out128_no_norm/syn_I0-M/0.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="files/BREF_f0mean_unit_out128_no_norm/syn_I1-F/0.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="files/BREF_f0mean_unit_out128_no_norm/syn_KB-M/0.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="files/BREF_f0mean_unit_out128_no_norm/syn_KI-M/0.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="files/BREF_f0mean_unit_out128_no_norm/syn_IR-F/0.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="files/BREF_f0mean_unit_out128_no_norm/syn_JN-F/0.wav" type="audio/wav">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+        </tr>
+            <th>Baseline with layer normalization</th>
+            <td>
+                <audio controls>
+                    <source src="files/BREF_f0mean_unit_out128_layernorm_v2/syn_I0-M/0.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="files/BREF_f0mean_unit_out128_layernorm_v2/syn_I1-F/0.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="files/BREF_f0mean_unit_out128_layernorm_v2/syn_KB-M/0.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="files/BREF_f0mean_unit_out128_layernorm_v2/syn_KI-M/0.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="files/BREF_f0mean_unit_out128_layernorm_v2/syn_IR-F/0.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="files/BREF_f0mean_unit_out128_layernorm_v2/syn_JN-F/0.wav" type="audio/wav">
+                </audio>
+            </td>
+        </tbody>
+    </table>
+    <h1> Voice Conversion </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Speakers (Target / Source)</th>
+                <th>I0-M / I1-F</th>
+                <th>I1-F / I0-M</th>
+                <th>KB-M / KI-M</th>
+                <th>IR-F / JN-F</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Conditionning on layer 1 only (training time : 5h41)</th>
+                <td>
+                    <audio controls>
+                        <source src="files/BREF_f0mean_unit_out128_no_norm_stop_c1/syn_target_I0-M_source_I1-F/0.wav" type="audio/wav">
+                    </audio>
+                </td>
+                <td>
+                    <audio controls>
+                        <source src="files/BREF_f0mean_unit_out128_no_norm_stop_c1/syn_target_I1-F_source_I0-M/0.wav" type="audio/wav">
+                    </audio>
+                </td>
+                <td>
+                    <audio controls>
+                        <source src="files/BREF_f0mean_unit_out128_no_norm_stop_c1/syn_target_KB-M_source_KI-M/0.wav" type="audio/wav">
+                    </audio>
+                </td>
+                <td>
+                    <audio controls>
+                        <source src="files/BREF_f0mean_unit_out128_no_norm_stop_c1/syn_target_IR-F_source_JN-F/0.wav" type="audio/wav">
+                    </audio>
+                </td>
+            </tr>
+            <tr>
+            </tr>
+        <tr>
+        </tr>
+            <th>Baseline without normalization (training time : 5h51)</th>
+            <td>
+                <audio controls>
+                    <source src="files/BREF_f0mean_unit_out128_no_norm/syn_target_I0-M_source_I1-F/0.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="files/BREF_f0mean_unit_out128_no_norm/syn_target_I1-F_source_I0-M/0.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="files/BREF_f0mean_unit_out128_no_norm/syn_target_KB-M_source_KI-M/0.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="files/BREF_f0mean_unit_out128_no_norm/syn_target_IR-F_source_JN-F/0.wav" type="audio/wav">
+                </audio>
+            </td>
+            <tr>
+            </tr>
+                <th>Baseline with layer normalization (training time : 9h57)</th>
+                <td>
+                    <audio controls>
+                        <source src="files/BREF_f0mean_unit_out128_layernorm_v2/syn_target_I0-M_source_I1-F/0.wav" type="audio/wav">
+                    </audio>
+                </td>
+                <td>
+                    <audio controls>
+                        <source src="files/BREF_f0mean_unit_out128_layernorm_v2/syn_target_I1-F_source_I0-M/0.wav" type="audio/wav">
+                    </audio>
+                </td>
+                <td>
+                    <audio controls>
+                        <source src="files/BREF_f0mean_unit_out128_layernorm_v2/syn_target_KB-M_source_KI-M/0.wav" type="audio/wav">
+                    </audio>
+                </td>
+                <td>
+                    <audio controls>
+                        <source src="files/BREF_f0mean_unit_out128_layernorm_v2/syn_target_IR-F_source_JN-F/0.wav" type="audio/wav">
+                    </audio>
+                </td>
+        </tbody>
+    </table>
+</body>
+</html>
